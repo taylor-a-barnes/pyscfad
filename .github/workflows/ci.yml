@@ -22,8 +22,3 @@ jobs:
         #run: ./.github/workflows/build_lib.sh
       - name: test
         run: ./.github/workflows/run_test.sh
-      - name: Upload coverage to codecov
-        uses: codecov/codecov-action@v2
-        with:
-          token: ${{secrets.CODECOV_TOKEN}}
-          files: ./pyscfad/coverage.xml
