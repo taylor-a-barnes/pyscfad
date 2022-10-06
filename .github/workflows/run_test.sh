@@ -14,3 +14,6 @@ echo "pyscfad_ccsd_implicit_diff = True" >> $HOME/.pyscf_conf.py
 
 cd pyscfad
 pytest --cov-report xml --cov=. --verbosity=1 --durations=10
+
+cd ../examples/gw
+python 02-oo-rpa.py
